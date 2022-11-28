@@ -21,7 +21,7 @@
 
     //SignUp Activity
     <string name="signup_title">S\'inscrire</string>
-    <string name="sign_up_title">S\'inscire</string>
+    <string name="sign_up_title">S\'inscrire</string>
     <string name="create_account">Créer un compte</string>
     <string name="hint_name">Nom</string>
     <string name="hint_first_name">Prénom</string>
@@ -40,6 +40,18 @@
     <string name="relevant_option">Veuillez choisir l\'option appropriée</string>
     <string name="next">Suivant</string>
     <string name="age">Entrez votre âge</string>
+    <string name="password_mismatch">Mot de passe incorrect</string>
+    <string name="repeat_password">Veuillez répéter votre mot de passe</string>
+    <string name="error_phone_number">Veuillez entrer votre numéro de téléphone</string>
+    <string name="error_password_incomplete">Votre mot de passe doit contenir 8 caractères, une lettre majuscule, un chiffre et un caractère spécial.</string>
+    <string name="error_email">Veuillez entrer une adresse e-mail valide</string>
+    <string name="error_last_name">Veuillez entrer votre nom de famille</string>
+    <string name="error_first_name">Veuillez entrer votre prénom</string>
+    
+    //SignUpFirst
+    <string name="profile">Vous êtes un…</string>
+    <string name="error_profile">Veuillez choisir le profil approprié</string>
+    <string name="error_dob">Veuillez sélectionner votre date de naissance</string>
 
     //SignInActivity
 

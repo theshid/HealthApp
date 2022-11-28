@@ -5,7 +5,11 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.view.WindowManager
+import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
+import com.example.healthapp.R
+import com.example.healthapp.app.utils.Common
 import com.example.healthapp.databinding.ActivitySignUpBinding
 
 class SignUpActivity : BaseActivity() {
@@ -17,13 +21,19 @@ class SignUpActivity : BaseActivity() {
     private lateinit var password: EditText
     private lateinit var confirmPassword: EditText
     private lateinit var email: EditText
+    private lateinit var btnCreateAccount: Button
+    private lateinit var textViewSignIn: TextView
+
+    private var dob:String? = null
+    private var profile:String ?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setUI()
-        this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
+        setClickListeners()
+
     }
 
     private fun setUI() {
@@ -33,10 +43,31 @@ class SignUpActivity : BaseActivity() {
         telephone = binding.signUpPhone
         password = binding.signUpPassword
         confirmPassword = binding.signUpPasswordRepeat
+        btnCreateAccount = binding.createAccount
+        textViewSignIn = binding.toSignIn
+
+        getDataFromIntent()
+        hideKeyboard()
+
+    }
+
+    private fun getDataFromIntent(){
+        dob = intent.getStringExtra(Common.KEY_DOB)
+        profile = intent.getStringExtra(Common.KEY_PROFILE)
+    }
+
+    private fun hideKeyboard(){
+        this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
     }
 
     private fun setClickListeners() {
+        btnCreateAccount.setOnClickListener {
 
+        }
+
+        textViewSignIn.setOnClickListener {
+
+        }
     }
 
     private fun registerUser() {
@@ -46,19 +77,19 @@ class SignUpActivity : BaseActivity() {
     private fun validateUser(): Boolean {
         return when {
             TextUtils.isEmpty(firstName.text.toString()) -> {
-                showErrorMessage("Please Enter your Username", true)
+                showErrorMessage(getString(R.string.error_first_name), true)
                 false
             }
 
             TextUtils.isEmpty(lastName.text.toString()) -> {
-                showErrorMessage("Please Enter your Username", true)
+                showErrorMessage(getString(R.string.error_last_name), true)
                 false
             }
 
             TextUtils.isEmpty(email.text.toString().trim { it <= ' ' })
                     || !Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()
             -> {
-                showErrorMessage("Please Enter your Valid Email Address", true)
+                showErrorMessage(getString(R.string.error_email), true)
                 false
             }
             TextUtils.isEmpty(password.text.toString().trim { it <= ' ' }) || password.length() <= 7
@@ -67,7 +98,7 @@ class SignUpActivity : BaseActivity() {
                     || !password.text.toString().matches(".*[!@#$%^&*()_+=-]*.".toRegex())
             -> {
                 showErrorMessage(
-                    "Password Should contain 8 Characters, One Capital Letter, One Number and Special Character ",
+                    getString(R.string.error_password_incomplete),
                     true
                 )
                 false
@@ -76,19 +107,19 @@ class SignUpActivity : BaseActivity() {
             TextUtils.isEmpty(
                 telephone.text.toString().trim { it <= ' ' }) || telephone.length() <= 7
             -> {
-                showErrorMessage("Telephone", true)
+                showErrorMessage(getString(R.string.error_phone_number), true)
                 false
             }
 
 
             TextUtils.isEmpty(confirmPassword.text.toString().trim { it <= ' ' }) -> {
-                showErrorMessage("Please Enter your Confirm Password", true)
+                showErrorMessage(getString(R.string.repeat_password), true)
                 false
             }
 
             password.text.toString().trim { it <= ' ' } != confirmPassword.text.toString()
                 .trim { it <= ' ' } -> {
-                showErrorMessage("Password Mismatch", true)
+                showErrorMessage(getString(R.string.password_mismatch), true)
                 false
             }
 

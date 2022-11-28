@@ -54,32 +54,39 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="1.0">
 
-        <io.ghyeok.stickyswitch.widget.StickySwitch
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="Choissez votre profile"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:clickable="true"
+            android:focusable="false"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:drawablePadding="5dp"
             android:id="@+id/stickySwitch"
-            android:layout_width="178dp"
-            android:layout_height="122dp"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="136dp"
-            android:layout_marginRight="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/editfield"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:ss_animationDuration="600"
-            app:ss_animationType="curved"
-            app:ss_iconPadding="18dp"
-            app:ss_iconSize="22dp"
-            app:ss_leftIcon="@drawable/person"
-            app:ss_leftText="Patient"
-            app:ss_rightIcon="@drawable/doctor"
-            app:ss_rightText="Doctor"
-            app:ss_selectedTextSize="18sp"
-            app:ss_sliderBackgroundColor="@color/black"
-            app:ss_switchColor="@color/light_blue"
-            app:ss_textColor="@color/black"
-            app:ss_textSize="15sp"
-            app:ss_textVisibility="visible" />
+             />
 
         <Button
             android:id="@+id/nextButton"
@@ -98,14 +105,29 @@
             app:layout_constraintStart_toStartOf="@+id/ageInput"
             app:layout_constraintTop_toBottomOf="@+id/ageInput" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Date de Naissance"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="@+id/stickySwitch"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="@+id/stickySwitch"
+            app:layout_constraintTop_toBottomOf="@+id/stickySwitch"/>
+
         <EditText
+            android:clickable="true"
+            android:focusable="false"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
             android:id="@+id/ageInput"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/editfield"
             android:ems="10"
-            android:hint="@string/age"
             android:inputType="number"
             android:paddingLeft="10dp"
             android:textColor="@color/black"

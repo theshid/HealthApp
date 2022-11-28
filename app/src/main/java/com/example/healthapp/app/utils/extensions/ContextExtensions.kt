@@ -10,13 +10,13 @@ import androidx.core.content.ContextCompat
 import com.example.healthapp.R
 
 
-internal inline fun <reified T : Activity> Context.startActivity(block: Intent.() -> Unit = {}) {
+ inline fun <reified T : Activity> Context.startActivity(block: Intent.() -> Unit = {}) {
     val intent = Intent(this, T::class.java)
     block(intent)
     startActivity(intent)
 }
 
-internal inline fun <reified T : Service> Context.startService(block: Intent.() -> Unit = {}) {
+/*internal inline fun <reified T : Service> Context.startService(block: Intent.() -> Unit = {}) {
     val intent = Intent(this, T::class.java)
     block(intent)
     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
@@ -26,7 +26,7 @@ internal inline fun <reified T : Service> Context.startService(block: Intent.() 
         startService(intent)
         Toast.makeText(this, getString(R.string.dl_started), Toast.LENGTH_LONG).show()
     }
-}
+}*/
 
 internal fun Context.showToast(message: String, duration: Int = Toast.LENGTH_LONG) {
     Toast.makeText(this, message, duration).show()

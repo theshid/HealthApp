@@ -12,6 +12,9 @@
         android:theme="@style/Theme.HealthApp"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpFirstActivity"
+            android:exported="false" />
+        <activity
             android:name=".BaseActivity"
             android:exported="false" />
         <activity

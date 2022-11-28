@@ -7,21 +7,20 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.view.WindowManager
-import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.healthapp.R
 import com.google.android.material.snackbar.Snackbar
-import com.skydoves.transformationlayout.onTransformationEndContainer
 
-fun AppCompatActivity.onTransformationEndContainerApplyParams() {
+
+/*fun AppCompatActivity.onTransformationEndContainerApplyParams() {
     onTransformationEndContainer(intent.parcelable("com.skydoves.transformationlayout"))
 }
 
 fun ComponentActivity.onTransformationEndContainerApplyParams() {
     onTransformationEndContainer(intent.parcelable("com.skydoves.transformationlayout"))
-}
+}*/
 
 inline fun <reified VM : ViewModel> AppCompatActivity.viewModelOf(
     factory: ViewModelProvider.Factory
@@ -41,7 +40,7 @@ internal fun Activity.showSnackbar(
             .setTextColor(loadColor(R.color.colorWhite))
             .show()
     } else {
-        sb.setBackgroundTint(loadColor(R.color.colorPrimary))
+        sb.setBackgroundTint(loadColor(R.color.colorGreen))
             .setTextColor(loadColor(R.color.colorWhite))
             .show()
     }
