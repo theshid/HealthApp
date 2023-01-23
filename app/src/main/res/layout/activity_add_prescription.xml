@@ -24,7 +24,6 @@
             android:id="@+id/book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/dm_sans_bold"
             android:text="Add Prescription"
             android:textColor="@color/white"
             android:textSize="35sp"
@@ -52,7 +51,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button"
-            android:fontFamily="@font/dm_sans"
             android:stateListAnimator="@null"
             android:text="Select Prescription"
             android:textAllCaps="false"
@@ -68,7 +66,6 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:background="@drawable/primary_button"
-            android:fontFamily="@font/dm_sans"
             android:stateListAnimator="@null"
             android:text="Upload file"
             android:textAllCaps="false"
@@ -86,7 +83,6 @@
             android:layout_height="50dp"
             android:background="@drawable/stroked"
             android:ems="10"
-            android:fontFamily="@font/dm_sans"
             android:hint="File title"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
@@ -111,7 +107,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.425"
-            app:srcCompat="@drawable/pdf_icon" />
+             />
+        <!--app:srcCompat="@drawable/pdf_icon"-->
 
         <ImageView
             android:id="@+id/cancelfile"
@@ -124,7 +121,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/cancel_icon" />
+            />
+        <!--app:srcCompat="@drawable/cancel_icon"-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

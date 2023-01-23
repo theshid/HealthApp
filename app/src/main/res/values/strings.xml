@@ -47,11 +47,17 @@
     <string name="error_email">Veuillez entrer une adresse e-mail valide</string>
     <string name="error_last_name">Veuillez entrer votre nom de famille</string>
     <string name="error_first_name">Veuillez entrer votre prénom</string>
-    
+
     //SignUpFirst
     <string name="profile">Vous êtes un…</string>
     <string name="error_profile">Veuillez choisir le profil approprié</string>
     <string name="error_dob">Veuillez sélectionner votre date de naissance</string>
+
+    //Forgot Password
+    <string name="forgot_password_email">Entrez votre adresse e-mail</string>
+    <string name="request_new_password">Demande de nouveau mot de passe</string>
+    <string name="reset_password">Réinitialiser votre mot de passe</string>
+    <string name="textview_forgot_password">Mot de passe oublié</string>
 
     //SignInActivity
 

@@ -41,7 +41,6 @@
                 style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dm_sans_bold"
                 android:text="Profile"
                 android:textColor="@color/white"
                 android:textSize="35sp"
@@ -91,7 +90,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="25dp"
-                        android:fontFamily="@font/dm_sans_bold"
                         android:text="Account details"
                         android:textColor="@color/black"
                         android:textSize="22sp"
@@ -105,7 +103,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/dm_sans"
                         android:text="Name: "
                         android:textColor="@color/black"
                         android:textSize="18sp" />
@@ -116,7 +113,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/dm_sans"
                         android:text="Age: "
                         android:textColor="@color/black"
                         android:textSize="18sp" />
@@ -127,7 +123,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/dm_sans"
                         android:text="Email: "
                         android:textColor="@color/black"
                         android:textSize="18sp" />
@@ -138,7 +133,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/dm_sans"
                         android:text="Phone: "
                         android:textColor="@color/black"
                         android:textSize="18sp" />
@@ -155,7 +149,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/primary_button"
-                android:fontFamily="@font/dm_sans"
                 android:gravity="center"
                 android:rotation="0"
                 android:rotationX="0"

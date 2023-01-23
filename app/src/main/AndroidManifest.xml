@@ -9,25 +9,36 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HealthApp"
+        android:theme="@style/SplashTheme"
         tools:targetApi="31">
         <activity
-            android:name=".SignUpFirstActivity"
+            android:name=".app.views.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".BaseActivity"
+            android:name=".app.views.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".app.views.LoginActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.views.SignUpFirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.views.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.views.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

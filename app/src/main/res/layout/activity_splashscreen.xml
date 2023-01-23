@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/dm_sans_bold"
         android:text="Medify"
         android:textColor="@color/black"
         android:textSize="40dp"

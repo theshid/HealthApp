@@ -1,9 +1,6 @@
-package com.shid.mosquefinder.app.di
+package com.example.healthapp.app.di
 
-import com.shid.mosquefinder.app.utils.helper_class.singleton.Common
-import com.shid.mosquefinder.data.api.DeeplApiInterface
-import com.shid.mosquefinder.data.api.GoogleApiInterface
-import com.shid.mosquefinder.data.api.QuranApiInterface
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,7 +16,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
-
+/*
     @Provides
     @Singleton
     @Named(Common.GOOGLE)
@@ -98,5 +95,5 @@ object NetworkModule {
     fun provideQuranApiService(@Named(Common.QURAN) retrofit: Retrofit): QuranApiInterface =
         retrofit.create(
             QuranApiInterface::class.java
-        )
+        )*/
 }

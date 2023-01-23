@@ -1,6 +1,6 @@
 package com.shid.mosquefinder.app.di
 
-import com.shid.mosquefinder.app.utils.helper_class.CoroutinesQualifiers
+import com.example.healthapp.app.utils.CoroutinesQualifiers
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
