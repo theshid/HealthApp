@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'kotlin-kapt'
 
@@ -48,6 +48,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //Splash Screen
+    def splashScreenVersion = "1.0.0"
+    implementation("androidx.core:core-splashscreen:$splashScreenVersion")
 
     //Switch
     implementation 'com.github.GwonHyeok:StickySwitch:0.0.16'
@@ -108,7 +112,7 @@ dependencies {
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
     def activity_version = "1.5.4"
-    implementation "androidx.activity:activity-ktx:$activity_version"
+    implementation "androidx.activity:activity-ktx:1.6.1"
     //Fragment
     implementation "androidx.fragment:fragment-ktx:$activity_version"
 

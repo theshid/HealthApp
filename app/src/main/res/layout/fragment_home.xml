@@ -24,7 +24,6 @@
             android:id="@+id/HelloTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/dm_sans_bold"
             android:text="Hello"
             android:textColor="@color/white"
             android:textSize="60sp"
@@ -37,7 +36,6 @@
             android:id="@+id/namePreview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/dm_sans_medium"
             android:text="Loading name..."
             android:textColor="@color/white"
             android:textSize="20dp"
@@ -75,7 +73,6 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dm_sans_medium"
                 android:text="Want to book an appointment?"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -86,7 +83,6 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dm_sans"
                 android:layout_marginTop="10dp"
                 android:text="Enter the doctor's name, email or phone"
                 android:textColor="@color/black"
@@ -107,7 +103,6 @@
                     android:layout_height="55dp"
                     android:background="@drawable/editfield"
                     android:ems="10"
-                    android:fontFamily="@font/dm_sans"
                     android:drawableStart="@drawable/serch"
                     android:drawablePadding="5dp"
                     android:hint="eg. xyz1234@gmail.com"
@@ -151,7 +146,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/dm_sans_medium"
                     android:text="Doctor Found!"
                     android:textColor="@color/light_blue"
                     android:textSize="20dp" />
@@ -161,7 +155,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:fontFamily="@font/dm_sans"
                     android:text="Name: Loading name"
                     android:textColor="@color/black" />
 
@@ -170,7 +163,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:fontFamily="@font/dm_sans"
                     android:text="Specialist: Loading specialization"
                     android:textColor="@color/black" />
 
@@ -179,7 +171,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:fontFamily="@font/dm_sans"
                     android:text="Email: Loading email"
                     android:textColor="@color/black" />
 
@@ -189,7 +180,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="20dp"
-                    android:fontFamily="@font/dm_sans"
                     android:text="Phone: Loading phone"
                     android:textColor="@color/black" />
 
@@ -203,7 +193,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:fontFamily="@font/dm_sans_bold"
             android:text="Doctor not found!"
             android:textColor="@color/black"
             android:textSize="25dp"

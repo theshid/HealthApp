@@ -1,4 +1,4 @@
-package com.shid.mosquefinder.app.di
+package com.example.healthapp.app.di
 
 import android.app.AlarmManager
 import android.app.NotificationManager
@@ -6,30 +6,19 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.content.res.Resources
 import androidx.work.WorkManager
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
-import com.shid.mosquefinder.R
-import com.shid.mosquefinder.app.utils.helper_class.Constants
-import com.shid.mosquefinder.app.utils.helper_class.FusedLocationWrapper
-import com.shid.mosquefinder.app.utils.helper_class.SharePref
-import com.shid.mosquefinder.data.model.User
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.serialization.json.Json
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
 object CoreModule {
 
-    @Provides
+   /* @Provides
     fun provideJson(): Json {
         return Json {
             ignoreUnknownKeys = true
@@ -97,5 +86,5 @@ object CoreModule {
     @Singleton
     fun provideAlarmManager(@ApplicationContext context: Context): AlarmManager {
         return context.getSystemService(AlarmManager::class.java)
-    }
+    }*/
 }

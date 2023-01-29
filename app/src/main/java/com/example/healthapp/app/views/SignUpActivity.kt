@@ -56,10 +56,6 @@ class SignUpActivity : BaseActivity() {
         profile = intent.getStringExtra(Common.KEY_PROFILE)
     }
 
-    private fun hideKeyboard(){
-        this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
-    }
-
     private fun setClickListeners() {
         btnCreateAccount.setOnClickListener {
 

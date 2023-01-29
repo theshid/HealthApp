@@ -1,4 +1,4 @@
-package com.shid.mosquefinder.app.utils.helper_class
+package com.example.healthapp.app.utils
 
 import javax.inject.Qualifier
 

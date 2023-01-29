@@ -2,7 +2,7 @@ package com.example.healthapp.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.shid.mosquefinder.app.di.InitializerEntryPoint
+import com.example.healthapp.app.di.InitializerEntryPoint
 
 
 /**

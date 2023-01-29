@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:text="Sample"
-    android:fontFamily="@font/dm_sans_medium"
     android:ellipsize="end"
     android:maxLines="1"
     android:textAppearance="?attr/textAppearanceSubtitle1"/>

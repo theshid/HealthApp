@@ -47,11 +47,32 @@
     <string name="error_email">Veuillez entrer une adresse e-mail valide</string>
     <string name="error_last_name">Veuillez entrer votre nom de famille</string>
     <string name="error_first_name">Veuillez entrer votre prénom</string>
-    
+
     //SignUpFirst
     <string name="profile">Vous êtes un…</string>
     <string name="error_profile">Veuillez choisir le profil approprié</string>
     <string name="error_dob">Veuillez sélectionner votre date de naissance</string>
+
+    //Forgot Password
+    <string name="forgot_password_email">Entrez votre adresse e-mail</string>
+    <string name="request_new_password">Demande de nouveau mot de passe</string>
+    <string name="reset_password">Réinitialiser votre mot de passe</string>
+    <string name="textview_forgot_password">Mot de passe oublié</string>
+    <string name="liste_des_patients">Liste des Patients</string>
+    <string name="recherche">Recherche</string>
+    <string name="patients">Patients</string>
+    <string name="selectionner_date">Selectionner Date</string>
+    <string name="aucun_patient">Aucun Patient</string>
+    <string name="nom_du_patient">Nom du Patient:</string>
+    <string name="patient_sexe">Sexe</string>
+    <string name="patient_dob">Date de Naissance</string>
+    <string name="patient_ethnie">Ethnie</string>
+    <string name="patient_niveau_instruction">Niveau d\'Instruction</string>
+    <string name="patient_profession">Profession</string>
+    <string name="patient_quartier_village">Quartier/Village</string>
+    <string name="patient_distance">Distance</string>
+    <string name="title_dossier_de_la_patiente">Dossier de la Patiente</string>
+    <string name="btn_suivant">Suivant</string>
 
     //SignInActivity
 

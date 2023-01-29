@@ -1,8 +1,6 @@
-package com.shid.mosquefinder.app.di
+package com.example.healthapp.app.di
 
 import android.content.Context
-import com.shid.mosquefinder.app.initializer.ScheduledWorkInitializer
-import com.shid.mosquefinder.app.initializer.WorkManagerInitializer
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
@@ -23,7 +21,7 @@ interface InitializerEntryPoint {
         operator fun invoke(context: Context): InitializerEntryPoint = resolve(context)
     }
 
-    fun inject(initializer: WorkManagerInitializer)
-    fun inject(initializer: ScheduledWorkInitializer)
+   /* fun inject(initializer: WorkManagerInitializer)
+    fun inject(initializer: ScheduledWorkInitializer)*/
 
 }
