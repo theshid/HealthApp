@@ -5,4 +5,35 @@
         <item>Pharmacien</item>
         <item>Docteur</item>
     </string-array>
+
+    <string-array name="patient_sex">
+        <item>H - Homme</item>
+        <item>F - Femme</item>
+    </string-array>
+
+    <string-array name="patient_ehtny">
+        <item>Zarma</item>
+        <item>Haoussa</item>
+    </string-array>
+
+    <string-array name="patient_education">
+        <item>Primaire</item>
+        <item>Collège</item>
+        <item>Université</item>
+    </string-array>
+
+    <string-array name="patient_matrimoniale">
+        <item>Marié(e)</item>
+        <item>Divorcé(e)</item>
+        <item>Célibataire</item>
+    </string-array>
+
+    <string-array name="patient_distance">
+        <item>1 à 10 km</item>
+        <item>11 à 20 km</item>
+        <item>21 à 50 km</item>
+        <item>Plus de 50 km</item>
+    </string-array>
+
+
 </resources>

@@ -50,8 +50,21 @@
 
     //SignUpFirst
     <string name="profile">Vous êtes un…</string>
+
+    //Error Message
     <string name="error_profile">Veuillez choisir le profil approprié</string>
     <string name="error_dob">Veuillez sélectionner votre date de naissance</string>
+    <string name="error_sexe">Veuillez choisir votre sexe</string>
+    <string name="error_education">Veuillex choisir votre niveau d\'education</string>
+    <string name="error_ethny">Veuillex choisir votre niveau ethnie</string>
+    <string name="error_distance">Veuillex choisir sélectionner la distance du centre</string>
+    <string name="error_profession">Veuillex saisir votre profession</string>
+    <string name="error_prenom">Veuillex saisir votre prenom</string>
+    <string name="error_nom">Veuillex saisir votre nom de famille</string>
+    <string name="error_phone">Veuillex saisir votre numero de telephone</string>
+    <string name="error_id">Veuillex saisr le numero de votre piece d\identite</string>
+    <string name="error_gh">Veuillex saisir le GH</string>
+    <string name="error_marital">Veuillez choisir votre situation matrimoniale</string>
 
     //Forgot Password
     <string name="forgot_password_email">Entrez votre adresse e-mail</string>
@@ -79,6 +92,8 @@
     <string name="patient_profession_mari">Profession du Mari</string>
     <string name="patient_allocation_famialiale">Allocation Famialiale</string>
     <string name="btn_termine">Terminé 2/2</string>
+    <string name="patient_id_number">Numéro d\'identification</string>
+    <string name="patient_single_status">Situation Matrimoniale</string>
 
     //SignInActivity
 

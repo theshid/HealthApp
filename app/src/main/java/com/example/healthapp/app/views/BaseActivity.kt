@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import com.example.healthapp.app.utils.extensions.showSnackbar
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
