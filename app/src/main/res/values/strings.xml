@@ -84,7 +84,7 @@
     <string name="patient_profession">Profession</string>
     <string name="patient_quartier_village">Quartier/Village</string>
     <string name="patient_distance">Distance</string>
-    <string name="title_dossier_de_la_patiente">Dossier de la Patiente</string>
+    <string name="title_dossier_de_la_patiente">Dossier du Patient</string>
     <string name="btn_suivant">Suivant 1/2</string>
     <string name="patient_nom_mari">Nom du Mari</string>
     <string name="patient_nom">Nom</string>

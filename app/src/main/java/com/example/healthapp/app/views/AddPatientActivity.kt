@@ -10,8 +10,10 @@ import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import com.example.healthapp.R
 import com.example.healthapp.databinding.ActivityAddPatientBinding
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 
+@AndroidEntryPoint
 class AddPatientActivity : BaseActivity() {
     private lateinit var binding :ActivityAddPatientBinding
 
@@ -83,7 +85,7 @@ class AddPatientActivity : BaseActivity() {
 
     private fun validationInformation():Boolean{
         return when{
-            TextUtils.isEmpty(profile.text.toString()) -> {
+            TextUtils.isEmpty(village.text.toString()) -> {
                 showErrorMessage(getString(R.string.error_profile), true)
                 false
             }

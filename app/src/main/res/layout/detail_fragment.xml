@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_detail"
+    android:background="@drawable/background"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/transformation_image"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="170dp"
+            android:layout_height="240dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/poster_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/woman" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/movie_detail_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintWidth_default="wrap">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_large">
+
+
+
+                <View
+                    android:id="@+id/line_below_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/padding"
+                    android:background="@color/light_green"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/anime_title" />
+
+
+                <TextView
+                    android:id="@+id/genre_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/arkhip_font"
+                    android:text="Genre"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_below_title" />
+
+               <LinearLayout
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/genre_title"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:id="@+id/table">
+
+                   <TableLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TableRow
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               style="@style/title_item"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/black"
+                               android:text="Nom :"/>
+
+                           <TextView
+                               android:id="@+id/nom"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="10dp"
+                               android:text="Jennifer"
+                               android:textColor="@color/black"/>
+                       </TableRow>
+
+                   </TableLayout>
+
+               </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/expand_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:autoLink="all"
+                    android:fontFamily="@font/arkhip_font"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Cast"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/font_small"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_runtime" />
+
+
+               <!-- <include
+                    android:id="@+id/included_layout"
+                    layout="@layout/list_item_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expand_button" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_detail_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/arkhip_font"
+                    android:text="Video"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/video_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="50dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/video_title" />
+
+                <TextView
+                    android:id="@+id/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/video_list" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
