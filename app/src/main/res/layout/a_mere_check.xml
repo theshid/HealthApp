@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.healthapp.app.utils.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:el_duration="100"
+    app:el_expanded="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Saignement vaginaux:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Leuchomees:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Maux de tete:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Convulsion:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Respiration difficile:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Essouflement:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Fievre:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Douleurs abdominales:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Enflement:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Perte de selles:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Perte d'urine:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="pb d'allaitement:"/>
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Oui"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    style="@style/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/light_blue"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Non"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</com.example.healthapp.app.utils.ExpandableLayout>

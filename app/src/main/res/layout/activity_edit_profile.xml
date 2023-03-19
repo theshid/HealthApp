@@ -41,7 +41,7 @@
                 style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Profile"
+                android:text="Consultations"
                 android:textColor="@color/white"
                 android:textSize="35sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/cardview_background"
                 android:backgroundTint="@color/white"
                 android:elevation="5dp"
@@ -91,67 +91,297 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="25dp"
-                        android:text="Update your details"
+                        android:text="Consultation Prenatale"
                         android:textColor="@color/light_blue"
                         android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <EditText
-                        android:id="@+id/editName"
-                        android:layout_width="330dp"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/stroked"
-                        android:ems="10"
-                        android:hint="Name"
-                        android:inputType="text"
-                        android:paddingLeft="20dp"
-                        android:textColorHint="@android:color/darker_gray"
-                        app:layout_constraintBottom_toTopOf="@+id/pass_box"
-                        app:layout_constraintEnd_toEndOf="@+id/pass_box"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="@+id/pass_box" />
 
-                    <EditText
-                        android:id="@+id/editAge"
+                    <HorizontalScrollView
                         android:layout_width="330dp"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/stroked"
-                        android:ems="10"
-                        android:hint="Age"
-                        android:inputType="numberDecimal"
-                        android:paddingLeft="20dp"
-                        android:textColorHint="@android:color/darker_gray"
-                        app:layout_constraintBottom_toTopOf="@+id/pass_box"
-                        app:layout_constraintEnd_toEndOf="@+id/pass_box"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="@+id/pass_box" />
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal"
+                        >
 
-                    <EditText
-                        android:id="@+id/editPhoneNumber"
-                        android:layout_width="330dp"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/stroked"
-                        android:ems="10"
-                        android:hint="Phone number"
-                        android:inputType="number"
-                        android:paddingLeft="20dp"
-                        android:textColorHint="@android:color/darker_gray"
-                        app:layout_constraintBottom_toTopOf="@+id/pass_box"
-                        app:layout_constraintEnd_toEndOf="@+id/pass_box"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="@+id/pass_box" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@color/white"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/doctor_patient" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="Examen Clinique"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@color/white"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/doctor_patient" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="Examen Suppl.."
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@color/white"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/doctor_patient" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="Plan de naissance"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/doctor_patient" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="Mesures preventives"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
 
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <Button
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/cardview_background"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.246">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="Consultation Postnatale"
+                    android:textColor="@color/light_blue"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                    <HorizontalScrollView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@color/white"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/smartphone" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="Accouchement"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="140dp"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@color/white"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="3dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:srcCompat="@drawable/smartphone" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="center"
+                                        android:text="La Mere"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+           <!-- <Button
                 android:id="@+id/updatepres"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
@@ -200,7 +430,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 tools:visibility="visible" />
-
+-->
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
