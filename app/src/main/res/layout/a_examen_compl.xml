@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".app.views.AddPatientActivity">
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/signUpHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Examen Complementaires"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signUph2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Consultation Prenatale"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <TextView
+            android:id="@+id/gs"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="GS/RH"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/patient_dob2"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Anormal si RH negatiif"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/signUph4"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Taux dhemoglobine/ Taux d'hemalocrite"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/patient_dob"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si Taux d'hemoglobine &lt;7g/ dl refere entre 7g/dl et 11g/dl ou
+                hematocrite &lt;20% donner 2cps/j de fer foldine pendant 3 mois "
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/signUph5"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Albuminerie/Proteinurie(en gr ou croix)"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/tension"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif intervenir ou referer"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/signUph6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Sucre"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/perimetre_branchial"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif intervenir ou referer"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_temperature"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="BW ou RPR ou VDRL"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif intervenir"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_vih"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Test VIH apres counseling (code PTME)"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/vih"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif appliquer le protocole national PTME"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_emmel"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Test d'Emmel/Electrophorese Hb"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/emmel"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif intervenir"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_hbs"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Antigene HBS"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/hbs"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Si positif intervenir ou referer"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_echographie"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Echographie (si possible)"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+        <EditText
+            android:id="@+id/echographie"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editfield"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Echographie"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/primary_button"
+        android:text="Enregistrer"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>

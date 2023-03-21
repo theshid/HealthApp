@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.healthapp.app.utils.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:el_duration="1000"
+    app:el_expanded="false">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cardview_background"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_up_name"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/editfield"
+                        android:ems="10"
+                        android:hint="Sexe"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_up_name1"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editfield"
+                        android:ems="10"
+                        android:hint="Poids"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_up_name2"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editfield"
+                        android:ems="10"
+                        android:hint="Taille"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_up_name4"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editfield"
+                        android:ems="10"
+                        android:hint="Respiration (30 a 60 par min)"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_up_name3"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editfield"
+                        android:ems="10"
+                        android:hint="Temperature"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </TableRow>
+
+            </TableLayout>
+<TableLayout
+    android:layout_width="330dp"
+    android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Naissance"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="premature"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Ne a terme"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coloration de\nl'enfant:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="normale"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Ictere"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Cyanose"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Paleur"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Etat de l'ombilic:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Propre"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Infecte"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reflexe de\nsuccion:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tetee:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complication a la\n naissance:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malformation\ncongenitale:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Allaitement\nexclusive:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alimentation\nartificielle:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BCG:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polio zero:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si mere seropositive\nprotoocole PTME:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+                               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Presence lesions\nbuccales:"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Oui"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:text="Non"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.example.healthapp.app.utils.ExpandableLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".app.views.AddPatientActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="100dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/signUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accouchement"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signUph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Consultation Postnatale precoce"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <TextView
+                android:id="@+id/signUph3"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Date de consultation"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:id="@+id/patient_dob2"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="21 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+            <TextView
+                android:id="@+id/signUph4"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Date d'accouchement"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:id="@+id/patient_dob"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="21 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lieu accouchement"/>
+                <TextView
+                    android:id="@+id/voir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voir plus"
+                    android:textColor="@color/light_blue"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="150dp"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/included_layout_acc"
+                layout="@layout/a_acc_lieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expand_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Information sur l'enfant"/>
+                <TextView
+                    android:id="@+id/voir2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voir plus"
+                    android:textColor="@color/light_blue"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="130dp"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/included_layout_acc_2"
+                layout="@layout/a_acc_enfant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expand_button" />
+
+
+            <Button
+                android:id="@+id/btn_next"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/primary_button"
+                android:text="Enregistrer"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

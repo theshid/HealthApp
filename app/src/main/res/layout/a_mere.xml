@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +8,7 @@
     tools:context=".app.views.AddPatientActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,13 +66,15 @@
           <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:layout_marginTop="50dp"
+              android:layout_marginTop="20dp"
               android:orientation="horizontal">
               <TextView
+                  android:layout_marginStart="40dp"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="Examen general"/>
               <TextView
+                  android:id="@+id/voir"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="Voir plus"
@@ -91,233 +93,179 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/expand_button" />
-            <EditText
-                android:id="@+id/sign_up_name"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_nom"
-                android:inputType="textPersonName"
-                android:paddingLeft="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/sign_up_first_name"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/hint_first_name"
-                android:inputType="textPersonName"
-                android:paddingStart="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Examen de la mere"/>
+                <TextView
+                    android:id="@+id/voir2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voir plus"
+                    android:textColor="@color/light_blue"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="130dp"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/included_layout2"
+                layout="@layout/a_mere_examen_mere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/expand_button" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Examen obstetrical"/>
+                <TextView
+                    android:id="@+id/voir3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voir plus"
+                    android:textColor="@color/light_blue"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="130dp"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/included_layout3"
+                layout="@layout/a_mere_examen_obs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expand_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mesures Preventives"/>
+
+                <TextView
+                    android:id="@+id/voir4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="120dp"
+                    android:gravity="end"
+                    android:text="Voir plus"
+                    android:textColor="@color/light_blue" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/included_layout4"
+                layout="@layout/a_mere_mesure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expand_button" />
+            <EditText
+                android:id="@+id/carte_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Observations"
+                android:inputType="textMultiLine"
+                android:paddingStart="20dp"
+                android:lines="5"
+                android:longClickable="false"
+                android:textColor="@color/black"
+                android:paddingRight="15dp"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
 
 
             <EditText
                 android:clickable="true"
                 android:focusable="true"
-                android:drawableEnd="@drawable/ic_arrow_drop_down"
                 android:drawablePadding="5dp"
-                android:id="@+id/sexe"
+                android:id="@+id/ethny"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/editfield"
                 android:ems="10"
-                android:hint="@string/patient_sexe"
-                android:inputType="text"
+                android:hint="Interventions"
+                android:inputType="textMultiLine"
+                android:lines="5"
                 android:paddingStart="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@android:color/darker_gray"
                 />
+
+
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/patient_niveau_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Rdv pour la prochaine CPoN tardive"
+                android:textSize="17sp"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                />
+
+
 
             <EditText
                 android:clickable="true"
                 android:focusable="true"
                 android:drawableEnd="@drawable/ic_calendar"
                 android:drawablePadding="5dp"
-                android:id="@+id/patient_dob"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_dob"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                />
-
-            <EditText
-                android:id="@+id/carte_id"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_id_number"
-                android:inputType="text"
-                android:paddingStart="20dp"
-                android:longClickable="false"
-                android:textColor="@color/black"
-                android:paddingRight="15dp"
-                android:textColorHint="@android:color/darker_gray"
-                />
-
-
-
-            <EditText
-                android:clickable="true"
-                android:focusable="true"
-                android:drawableEnd="@drawable/ic_arrow_drop_down"
-                android:drawablePadding="5dp"
-                android:id="@+id/ethny"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_ethnie"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                />
-
-
-            <EditText
-                android:id="@+id/gs"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="GS/RH"
-                android:inputType="textEmailAddress"
-                android:paddingStart="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                app:layout_constraintEnd_toEndOf="@+id/SignUp_Name"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/SignUp_Name"
-                app:layout_constraintTop_toBottomOf="@+id/SignUp_Name" />
-
-
-            <EditText
-                android:clickable="true"
-                android:focusable="true"
-                android:drawableEnd="@drawable/ic_arrow_drop_down"
-                android:drawablePadding="5dp"
-                android:id="@+id/patient_niveau_instruction"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_niveau_instruction"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                />
-
-
-
-            <EditText
-                android:clickable="true"
-                android:focusable="true"
-                android:drawableEnd="@drawable/ic_arrow_drop_down"
-                android:drawablePadding="5dp"
                 android:id="@+id/patient_situation_matri"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/editfield"
                 android:ems="10"
-                android:hint="Situation Matrimoniale"
+                android:hint="21 janvier 2023"
                 android:inputType="text"
                 android:paddingStart="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@android:color/darker_gray"
                 />
 
-            <EditText
-                android:id="@+id/patient_profession"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_profession"
-                android:inputType="phone"
-                android:paddingStart="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                />
-
-            <EditText
-                android:id="@+id/patient_phone"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/hint_phone"
-                android:inputType="phone"
-                android:paddingStart="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                app:layout_constraintEnd_toEndOf="@+id/SignUp_Email"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/SignUp_Email"
-                app:layout_constraintTop_toBottomOf="@+id/SignUp_Email" />
-
-            <EditText
-                android:id="@+id/patient_quartier"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_quartier_village"
-                android:inputType="textPassword"
-                android:paddingStart="20dp"
-                android:longClickable="false"
-                android:textColor="@color/black"
-                android:paddingRight="15dp"
-                android:textColorHint="@android:color/darker_gray"
-                />
 
 
-
-            <EditText
-                android:clickable="true"
-                android:focusable="true"
-                android:drawableEnd="@drawable/ic_arrow_drop_down"
-                android:drawablePadding="5dp"
-                android:id="@+id/patient_distance"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/editfield"
-                android:ems="10"
-                android:hint="@string/patient_distance"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@android:color/darker_gray"
-                />
 
 
             <Button
@@ -326,8 +274,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
                 android:background="@drawable/primary_button"
-                android:text="@string/btn_suivant"
+                android:text="Enregistrer"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 />
@@ -338,4 +287,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
