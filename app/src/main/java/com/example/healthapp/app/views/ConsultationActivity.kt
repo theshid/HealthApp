@@ -11,6 +11,8 @@ import com.example.healthapp.data.Consultation
 import com.example.healthapp.databinding.AAccouchementBinding
 import com.example.healthapp.databinding.AExamenCliniqueBinding
 import com.example.healthapp.databinding.AExamenComplBinding
+import com.example.healthapp.databinding.AExamenMesureBinding
+import com.example.healthapp.databinding.AExamenPlanBinding
 import com.example.healthapp.databinding.AMereBinding
 import com.example.healthapp.databinding.ActivityConsultationBinding
 import com.example.healthapp.databinding.ActivityEditProfileBinding
@@ -25,6 +27,8 @@ class ConsultationActivity : AppCompatActivity() {
     private lateinit var binding4: AAccouchementBinding
     private lateinit var binding5: AExamenCliniqueBinding
     private lateinit var binding6: AExamenComplBinding
+    private lateinit var binding7: AExamenPlanBinding
+    private lateinit var binding8: AExamenMesureBinding
     //private lateinit var layout:ExpandableLayout
     //private lateinit var layout2:ExpandableLayout
   /*  private lateinit var layout3:ExpandableLayout
@@ -42,7 +46,9 @@ class ConsultationActivity : AppCompatActivity() {
         binding4 = AAccouchementBinding.inflate(layoutInflater)
         binding5 = AExamenCliniqueBinding.inflate(layoutInflater)
         binding6 = AExamenComplBinding.inflate(layoutInflater)
-        setContentView(binding6.root)
+        binding7 = AExamenPlanBinding.inflate(layoutInflater)
+        binding8 = AExamenMesureBinding.inflate(layoutInflater)
+        setContentView(binding8.root)
 
         val consultation1 = Consultation(id = 1, name = "Jennifer Bah", date = "2023-03-18")
         val consultation2 = Consultation(id = 2, name = "Jennifer Bah", date = "2023-03-20")

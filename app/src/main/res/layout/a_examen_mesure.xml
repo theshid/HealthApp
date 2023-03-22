@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".app.views.AddPatientActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/signUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Mesures Préventives"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signUph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Consultation Prénatale"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/signUph9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="VAT1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/patient_dob2"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/vat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="VAT2"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date2"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque2"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/vat3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="VAT3"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date3"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque3"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_effort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="VAT4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date4"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque4"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/vat5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="VAT5"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date5"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque5"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TP1 (3cps de sulfadoxine pyrimethamine prise unique)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date6"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque6"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (Après 16 SA ou des perceptions des mouvements
+                foetaux)"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TP2 (3cps de sulfadoxine pyrimethamine prise unique)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date7"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque7"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:lines="2"
+                android:hint="Remarques (un mois après la première dose)"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TP3 (3cps de sulfadoxine pyrimethamine prise unique)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date8"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque8"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (un mois après la deuxième dose)"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/remise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Remise de moustiquaire imprégné d'insecticide (MIII)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date9"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque9"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (Dès la première consultation)"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/alben"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Albendazote 400mg ou Mébandazote 500 mg"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date10"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque10"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (Après le premier trimestre)"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Fer/folate 1 comprimé par jour"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date11"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque11"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (Pendant toute la grossesse)"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/misopro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Misoprostol 200 microgrammes (3 comprimés)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date12"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque12"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques (À remettre au 3ème trimestre de la grossesse)"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/arv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ARV (selon protocole PTME)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/date13"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/remarque13"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Remarques"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

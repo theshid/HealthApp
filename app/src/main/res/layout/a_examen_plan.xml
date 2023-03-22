@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".app.views.AddPatientActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="100dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/signUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan d'Accouchement"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signUph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Consultation Prénatale"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <TextView
+                android:id="@+id/signUph3"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Informer la femme sur les signes de dangers\
+                suivants pour lesquels elle doit se rendre dans une formation sanitaire"
+                android:textColor="@color/colorRed"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/signUph9"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Saignements vaginaux"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/patient_dob2"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/maux_tete"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Maux de tête prononcé/ Vision floue"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/maux"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/convultion"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Convulsion/Perte de connaissance"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_convulsion"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_effort"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Éssoufflement lors d'un effort physique"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_effort"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/fievre"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Fievre/Faiblessse a quitter le lit"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_fievre"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/douleurs"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Douleurs abdominales intenses"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_douleurs"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/doigt"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Doigt, visage et jambes enflés"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_doigt"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/perte_vaginale"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Perte vaginale (liquide amniotique)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_perte_vaginale"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_enfant"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="L'enfant ne bouge pas"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_enfant"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_travail"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Travail prolongé de plus de 12h"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_travail"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/toux"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Toux de plus deux semaines"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_toux"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Informer la femme sur les signes d'entrée en travail suivants"
+                android:textColor="@color/colorRed"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/perte_v2"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Pertes vaginale sanglantes ou gluantes"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_perte_v2"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/contractions"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Contractions douleureuses toutes les 20 mn ou moins"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+                    <CheckBox
+                        style="@style/title_item"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_contraction"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Préparation à l'accouchement"
+                android:textColor="@color/colorRed"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_lieu_acc"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Lieu d'accouchement à préciser"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_lieu_acc"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_transport"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Moyen de transport"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_transport"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_economie"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Type d'économie pour l'accouchement et d'éventuel complications"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_economie"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_id_decision"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Identification du ou des preneurs de décisions"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_id_decision"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_sang"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Identification des donneurs de sang"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_sang"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_observation"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Observations"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_observation"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_interventions"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Interventions"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:id="@+id/edit_intervention"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="Information données"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_rdv"
+                        android:layout_marginStart="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rendez-vous pour la prochaine consultation"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/signUpHeader"
+                        app:layout_constraintTop_toBottomOf="@+id/signUpHeader" />
+
+
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:id="@+id/edit_rdv"
+                android:layout_marginStart="40dp"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield"
+                android:ems="10"
+                android:hint="17 janvier 2023"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
